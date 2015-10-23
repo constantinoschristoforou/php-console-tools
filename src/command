@@ -1,0 +1,20 @@
+#!/usr/bin/env php
+<?php
+
+require_once __DIR__.'/../vendor/autoload.php';
+
+use Con\Tools\Commands\ImageOptimizerCommand;
+use Symfony\Component\Console\Application;
+
+$application = new Application();
+
+
+/**
+ * Add your new commands here
+ *
+ */
+$application->add(new ImageOptimizerCommand());
+
+
+
+$application->run();
